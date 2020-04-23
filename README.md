@@ -14,7 +14,7 @@ My configuration files for Vim, Tmux (TODO) and Zsh (TODO)
   - Mac: `brew install vim`
 2. Clone the repository to home directory and cd into it
 ```
-git clone https://github.com/kaushal-py/dotfiles.git ~/ && cd ~/dotfiles
+git clone https://github.com/kaushal-py/dotfiles.git ~/dotfiles && cd ~/dotfiles
 ```
 3. Give permission and run installation
 ```
