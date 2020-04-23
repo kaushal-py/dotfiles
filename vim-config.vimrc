@@ -41,3 +41,5 @@ set incsearch                           " search as characters are entered
 filetype indent on                      " load filetype-specific indent files
 filetype plugin on                      " load filetype-specific plugins
 
+set path+=**                            " Fuzzy File search
+
