@@ -1,4 +1,5 @@
 set nocompatible
+set encoding=utf-8
 
 "######################################################################################"
 "
@@ -17,6 +18,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'sonph/onehalf', {'rtp': 'vim'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-python/python-syntax'
+Plug 'davidhalter/jedi-vim'
 
 " Initialize plugin system
 call plug#end()
@@ -38,8 +40,16 @@ set showcmd                             " show command in bottom bar
 set showmatch                           " highlight matching [{()}]
 set incsearch                           " search as characters are entered
 
+set foldmethod=indent                   " Enable code folding by indent (python)
+set nofoldenable                        " Initially no code is folded
+
 filetype indent on                      " load filetype-specific indent files
+set autoindent                          " load filetype-specific indent files
 filetype plugin on                      " load filetype-specific plugins
 
 set path+=**                            " Fuzzy File search
+set wildmenu                            " Cycle throuh options on multiple search options
 
+set clipboard=unnamed                   " Use same clipboard for vim and system
+" Make spacebar more useful
+nnoremap <space> za                     
