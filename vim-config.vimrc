@@ -44,7 +44,6 @@ set foldmethod=indent                   " Enable code folding by indent (python)
 set nofoldenable                        " Initially no code is folded
 
 filetype indent on                      " load filetype-specific indent files
-set autoindent                          " load filetype-specific indent files
 filetype plugin on                      " load filetype-specific plugins
 
 set path+=**                            " Fuzzy File search
