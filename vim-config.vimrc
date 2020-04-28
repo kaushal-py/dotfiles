@@ -43,6 +43,7 @@ set incsearch                           " search as characters are entered
 set foldmethod=indent                   " Enable code folding by indent (python)
 set nofoldenable                        " Initially no code is folded
 
+filetype on
 filetype indent on                      " load filetype-specific indent files
 " set autoindent                          " load filetype-specific indent files
 filetype plugin on                      " load filetype-specific plugins
@@ -55,5 +56,5 @@ set clipboard=unnamed                   " Use same clipboard for vim and system
 nnoremap <space> za                     
 
 set laststatus=2
-set statusline=%f
-set paste
+set statusline+=%f
+" set paste
